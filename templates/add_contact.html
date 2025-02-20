@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Añadir Contacto{% endblock %}
+{% block content %}
+    <h1 class="text-center">Añadir Nuevo Contacto</h1>
+    <form method="POST" class="p-3">
+        <div class="mb-3">
+            <label class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Teléfono:</label>
+            <input type="text" class="form-control" name="telefono">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Población:</label>
+            <input type="text" class="form-control" name="poblacion" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Unidad:</label>
+            <input type="text" class="form-control" name="unidad">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Moderador:</label>
+            <input type="text" class="form-control" name="moderador">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tel. Moderador:</label>
+            <input type="text" class="form-control" name="tel_moderador">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Archipretazgo:</label>
+            <input type="text" class="form-control" name="archipretazgo">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Arcipreste:</label>
+            <input type="text" class="form-control" name="arcipreste">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tel. Arcipreste:</label>
+            <input type="text" class="form-control" name="tel_arcipreste">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Animador:</label>
+            <input type="text" class="form-control" name="animador">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Tel. Animador:</label>
+            <input type="text" class="form-control" name="tel_animador">
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Contacto</button>
+    </form>
+{% endblock %}

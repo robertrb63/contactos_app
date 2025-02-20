@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Resultados de Búsqueda{% endblock %}
+{% block content %}
+    <h1 class="text-center">Contactos en {{ poblacion }}</h1>
+    {% if contacts %}
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Teléfono</th>
+                        <th>Email</th>
+                        <th>Población</th>
+                        <th>Unidad</th>
+                        <th>Moderador</th>
+                        <th>Tel. Moderador</th>
+                        <th>Archipretazgo</th>
+                        <th>Arcipreste</th>
+                        <th>Tel. Arcipreste</th>
+                        <th>Animador</th>
+                        <th>Tel. Animador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for contact in contacts %}
+                        <tr>
+                            <td>{{ contact.nombre }}</td>
+                            <td>{{ contact.telefono }}</td>
+                            <td>{{ contact.email }}</td>
+                            <td>{{ contact.poblacion }}</td>
+                            <td>{{ contact.unidad }}</td>
+                            <td>{{ contact.moderador }}</td>
+                            <td>{{ contact.tel_moderador }}</td>
+                            <td>{{ contact.archipretazgo }}</td>
+                            <td>{{ contact.arcipreste }}</td>
+                            <td>{{ contact.tel_arcipreste }}</td>
+                            <td>{{ contact.animador }}</td>
+                            <td>{{ contact.tel_animador }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <p class="text-center">No se encontraron contactos en {{ poblacion }}</p>
+    {% endif %}
+{% endblock %}
