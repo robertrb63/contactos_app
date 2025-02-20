@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "Roberto",
+        "telefono": "98765f5",
+        "email": "jj@faf.com",
+        "poblacion": "Aren",
+        "unidad": "Graus",
+        "moderador": "Juan Ignacio",
+        "tel_moderador": "898723466",
+        "archipretazgo": "Ribagorza",
+        "arcipreste": "Jhon Mario",
+        "tel_arcipreste": "09873426",
+        "animador": "Afredo",
+        "tel_animador": "5546877"
+    },
+    {
+        "nombre": "RESTREPO BUILES ROBERTO ANTONIO",
+        "telefono": "624083835",
+        "email": "restrepo.roberto@gmail.com",
+        "poblacion": "Graus",
+        "unidad": "Graus",
+        "moderador": "Jesús Ignacio Cardona",
+        "tel_moderador": "00000000000",
+        "archipretazgo": "",
+        "arcipreste": "",
+        "tel_arcipreste": "",
+        "animador": "",
+        "tel_animador": ""
+    }
+]
